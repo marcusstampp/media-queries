@@ -1,0 +1,28 @@
+body {
+
+    background-color: black;
+    color: white;
+}
+
+@media print {
+     body {
+        background-color: aliceblue;
+        color: blue;
+     }   
+}
+
+@media screen and (max-width: 500px) {
+
+        li {
+
+            color: blueviolet;
+        }
+}
+
+@media print , (max-width: 500px) {
+    /* * ? OR statment , - checks if either value is true  */
+    li {
+
+        color: rgb(43, 198, 226);
+    }
+}
